@@ -1,0 +1,16 @@
+proxies:
+  - name: my-http-proxy
+    type: http
+    server: 36.26.83.190
+    port: 3828
+    username: WX_d9wrNWYXrs
+    password: XLJJSsaoge99.
+
+proxy-groups:
+  - name: Proxy
+    type: select
+    proxies:
+      - my-http-proxy
+
+rules:
+  - MATCH,Proxy
